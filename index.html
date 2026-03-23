@@ -692,7 +692,7 @@
       }
 
       createAudioNode() {
-        const bufferSize = 512;
+        const bufferSize = 2048;
         const node = this.audioContext.createScriptProcessor(bufferSize, 0, 1);
         node.onaudioprocess = (event) => {
           const output = event.outputBuffer.getChannelData(0);
